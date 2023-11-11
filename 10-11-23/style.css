@@ -1,0 +1,69 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./images/Acqua\ bluu.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit: cover;
+}
+
+.hero div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #e2e2e2;
+  font-family: "Dalek", sans-serif;
+}
+.hero p {
+  font-size: 30px;
+}
+.hero h1 {
+  font-size: 60px;
+}
+.hero button {
+  border-radius: 7px;
+  background-color: #437d80;
+  color: #e2e2e2;
+  width: 25%;
+  height: 40px;
+  font-size: 25px;
+  font-family: "Dalek", sans-serif;
+}
+
+.divDue {
+  background-color: #6dd4e5;
+  min-height: 100vh;
+}
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.gallery-title {
+  font-family: "Dalek", sans-serif;
+  text-align: center;
+  color: #e8f5f4;
+  font-size: 34px;
+  padding-top: 30px;
+}
+.img-gallery {
+  border-radius: 15px;
+  border: 4px dotted #437d80;
+}
+@media only screen and (max-width: 600px) {
+  .hero {
+    background-image: none;
+  }
+  * {
+    color: black;
+    font-size: 8px;
+    text-align: center;
+  }
+}
