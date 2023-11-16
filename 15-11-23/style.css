@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  margin-top: 20px;
+  gap: 15px;
+  margin-left: 20px;
+  box-sizing: border-box;
+}
+
+.findBest {
+  font-size: 4rem;
+}
+.roboshop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebd5b5;
+  width: 150px;
+  height: 140px;
+  border-radius: 140px;
+}
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 48%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.icona {
+  font-size: 1.2rem;
+  background-color: #ebd5b5;
+  height: 140px;
+  width: 110px;
+  border-radius: 140px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.robo-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  width: 50%;
+}
+
+.robo {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #ebd5b5;
+  border-radius: 16px;
+}
+
+.cuore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  background-color: #f8c480;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+}
+
+.piu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  background-color: #f8c480;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 50px;
+  font-size: 1.5rem;
+}
+.robo img {
+  object-fit: cover;
+}
