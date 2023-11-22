@@ -1,13 +1,13 @@
 // Esercizio 1
 
-const onImageListGET = async () => {
+const ImageListGET = async () => {
   const res = await fetch("https://picsum.photos/v2/list");
   const data = await res.json();
 
   return data;
 };
 
-onImageListGET().then((data) => {
+ImageListGET().then((data) => {
   data.forEach((image) => {
     console.log(image.download_url);
   });
@@ -50,7 +50,7 @@ const imageData = {
 
 // Esercizio Avanzato
 
-onImageListGET().then((data) => {
+ImageListGET().then((data) => {
   data.forEach((image) => {
     bodyEl.append(RenderImageAndText(image));
   });
