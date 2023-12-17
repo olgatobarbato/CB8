@@ -1,0 +1,9 @@
+.galleria__item img {
+  border-radius: 12px;
+  box-shadow: lightgray;
+  width: 100%;
+}
+
+.galleria__item {
+  width: 70%;
+}

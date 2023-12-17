@@ -1,0 +1,24 @@
+.Galleria {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Galleria h2 {
+  padding: 0 24px;
+}
+.Galleria__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+  padding: 12px 24px;
+  margin-bottom: 50px;
+}
+.Galleria__button__left {
+  height: 50%;
+  transform: translateY(30%);
+}
+.Galleria__button__right {
+  height: 50%;
+  transform: translateY(30%);
+}

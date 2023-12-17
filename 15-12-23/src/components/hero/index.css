@@ -1,0 +1,32 @@
+.Hero {
+  background-image: url("https://picsum.photos/id/41/800/600");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.Hero__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  text-align: center;
+}
+.Hero__text p {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.Hero__text button {
+  width: 150px;
+}
