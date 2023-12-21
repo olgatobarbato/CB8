@@ -1,0 +1,44 @@
+.Post {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 24px;
+  border: 1px solid gray;
+  border-radius: 12px;
+  margin: 20px;
+}
+.Post__user {
+  display: flex;
+  align-items: center;
+  gap: 3%;
+  padding: 12px 24px;
+}
+
+.Post__user--img img {
+  width: 100px;
+}
+.Post__title {
+  margin: 0;
+}
+
+.Post__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Post__info--gift {
+  display: flex;
+  align-items: center;
+}
+
+.Post__info--categories {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+  font-size: 0.8rem;
+  color: grey;
+}
+.Post__buttons {
+  display: flex;
+  font-size: 0.8rem;
+  gap: 10px;
+}
