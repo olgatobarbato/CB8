@@ -1,0 +1,14 @@
+.App h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px #fd9e9e;
+}
+
+.Cards__Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
