@@ -1,0 +1,35 @@
+@import "../../assets/css/variables.scss";
+@import "../../assets/css/mixins.scss";
+
+.TodoItem {
+  @include border-element();
+  position: relative;
+  width: 70%;
+  padding: 10px;
+
+  p {
+    @include flex-box(row, center, space-between, 7px);
+    font-size: $font-size;
+
+    div {
+      @include flex-box(row, center, center, 10px);
+    }
+  }
+  button {
+    background-color: #99e899;
+    border: none;
+    width: 120px;
+    border-radius: $border-radius;
+    transition: $transition;
+
+    &:hover {
+      background-color: tomato;
+      color: white;
+      transform: $transform;
+    }
+  }
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+}
