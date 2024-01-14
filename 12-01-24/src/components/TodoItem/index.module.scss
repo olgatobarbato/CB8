@@ -1,0 +1,39 @@
+@import "../../assets/css/variables.scss";
+@import "../../assets/css/mixins.scss";
+
+.TodoItem {
+  @include border-element();
+  @include flex-box(row, center, space-between, 7px);
+  position: relative;
+  width: 80%;
+  padding: 10px;
+
+  .input {
+    width: 25px;
+    height: 25px;
+    accent-color: $primary-color;
+    cursor: pointer;
+  }
+
+  .input_par {
+    @include flex-box(row, center, space-between, 10px);
+  }
+
+  .par {
+    font-size: $font-size;
+  }
+  .button {
+    background-color: #99e899;
+    border: none;
+    width: 120px;
+    border-radius: $border-radius;
+    transition: $transition;
+
+    &:hover {
+      background-color: tomato;
+      color: white;
+      transform: $transform;
+      cursor: pointer;
+    }
+  }
+}

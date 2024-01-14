@@ -1,0 +1,42 @@
+@import "../../assets/css/variables.scss";
+@import "../../assets/css/mixins.scss";
+
+.AddTodoForm {
+  @include flex-box(row, center, center, 15px);
+
+  height: 50px;
+  width: 80%;
+  margin-bottom: 40px;
+
+  .textInput {
+    height: 35px;
+    border: none;
+    width: 60%;
+
+    &:focus {
+      outline-style: dashed;
+      outline-color: $primary-color;
+      border-radius: $border-radius;
+    }
+    &::placeholder {
+      padding: 2%;
+      font-size: $font-size;
+    }
+  }
+  .submitInput {
+    background-color: #53a353;
+    border: none;
+    width: 120px;
+    height: 35px;
+    transition: $transition;
+    border-radius: 10px;
+    font-size: $font-size;
+
+    &:hover {
+      background-color: #125012;
+      color: white;
+      transform: $transform;
+      cursor: pointer;
+    }
+  }
+}
