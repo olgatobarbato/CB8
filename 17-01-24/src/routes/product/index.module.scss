@@ -1,0 +1,40 @@
+@import "../../assets/css/mixins.scss";
+@import "../../assets/css/variables.scss";
+
+.Product {
+  @include flexbox($dir: column, $justify: center, $align: center, $gap: 10px);
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    color: $primary-color;
+  }
+
+  .thumbnail {
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid $secondary-color;
+    border-radius: 8px;
+  }
+
+  h3 {
+    margin-top: 5px;
+  }
+
+  .images {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    img {
+      width: calc(33.33% - 10px);
+      margin-right: 10px;
+      margin-bottom: 10px;
+      border: 2px solid $secondary-color;
+      border-radius: 4px;
+    }
+  }
+}

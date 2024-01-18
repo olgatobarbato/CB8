@@ -1,0 +1,33 @@
+@import "../../assets/css/mixins.scss";
+@import "../../assets/css/variables.scss";
+
+.Navbar {
+  @include flexbox(
+    $dir: row,
+    $justify: space-between,
+    $align: center,
+    $gap: 1px
+  );
+
+  padding: 10px;
+  background-color: $primary-color;
+
+  .logo {
+    width: 100px;
+  }
+
+  .list {
+    @include flexbox($dir: row, $justify: center, $align: inherit, $gap: 50px);
+
+    li {
+      list-style: none;
+      font-size: 1rem;
+    }
+  }
+  .Link {
+    color: white;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}

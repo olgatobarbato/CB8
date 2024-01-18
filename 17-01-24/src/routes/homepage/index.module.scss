@@ -1,0 +1,45 @@
+@import "../../assets/css/mixins.scss";
+@import "../../assets/css/variables.scss";
+
+.Homepage {
+  @include flexbox($dir: column, $justify: center, $align: center, $gap: 0);
+
+  h1 {
+    text-align: center;
+  }
+
+  h2 {
+    padding: $padding;
+    text-align: center;
+  }
+  .buttons {
+    @include flexbox($dir: row, $justify: center, $align: center, $gap: 20px);
+    li {
+      list-style: none;
+    }
+    button {
+      @include button();
+      width: 130px;
+      align-self: center;
+    }
+  }
+  h3 {
+    color: black;
+    text-align: center;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+  .products {
+    @include flexbox($dir: column, $justify: center, $align: center, $gap: 0);
+  }
+  .thumbnail {
+    width: 80%;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

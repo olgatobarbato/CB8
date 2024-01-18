@@ -1,0 +1,29 @@
+@import "../../assets/css/mixins.scss";
+@import "../../assets/css/variables.scss";
+
+.about {
+  @include flexbox($dir: row, $justify: inherit, $align: inherit, $gap: 20px);
+
+  margin-top: 50px;
+  padding: $padding;
+  img {
+    width: 40%;
+    padding-top: $padding;
+  }
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  p {
+    font-size: 1.3rem;
+    text-align: justify;
+  }
+  @media (max-width: 768px) {
+    display: block;
+    img {
+      width: 100%;
+    }
+  }
+}

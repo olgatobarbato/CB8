@@ -1,0 +1,83 @@
+@import "../../assets/css/mixins.scss";
+@import "../../assets/css/variables.scss";
+
+.Contacts {
+  @include flexbox($dir: row, $justify: inherit, $align: center, $gap: 50px);
+
+  margin-top: 5%;
+  padding: $padding;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .text {
+    width: 50%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  .form {
+    width: 50%;
+    border: 1px solid black;
+    padding: $padding;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    input {
+      height: 30px;
+      background-color: whitesmoke;
+      outline: none;
+
+      &:focus {
+        border-color: darkgreen;
+        box-shadow: 0 0 5px rgba(0, 119, 204, 0.7);
+      }
+    }
+
+    .names {
+      @include flexbox(
+        $dir: row,
+        $justify: inherit,
+        $align: inherit,
+        $gap: 200px
+      );
+    }
+    .names_Input {
+      @include flexbox(
+        $dir: row,
+        $justify: inherit,
+        $align: inherit,
+        $gap: 20px
+      );
+    }
+
+    input[type="text"] {
+      width: 50%;
+    }
+
+    input[type="email"] {
+      width: 100%;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+
+      &:focus {
+        border-color: darkgreen;
+        box-shadow: 0 0 5px rgba(0, 100, 0, 0.7);
+      }
+    }
+    input[type="submit"] {
+      @include button();
+
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "./src/assets/css/variables.scss";
+
+@mixin flexbox($dir: row, $justify: inherit, $align: inherit, $gap: 0px) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin button() {
+  color: white;
+  background-color: $primary-color;
+  transition: background-color 0.35s;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: black;
+  }
+}
