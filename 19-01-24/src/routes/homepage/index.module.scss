@@ -1,0 +1,57 @@
+.Homepage {
+  margin: 10px 20px;
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+      width: 100px;
+    }
+
+    .h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    label {
+      font-size: 1.3rem;
+    }
+
+    .inputText {
+      border-radius: 10px;
+      width: 30%;
+      height: 25px;
+
+      &:focus {
+        outline-color: #158ade;
+      }
+      @media only screen and (max-width: 768px) {
+        width: 70%;
+      }
+    }
+    .inputSubmit {
+      border-radius: 10px;
+      width: 20%;
+      height: 25px;
+      border: none;
+      transition: 0.3s;
+
+      &:hover {
+        color: white;
+        background-color: tomato;
+      }
+
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+}

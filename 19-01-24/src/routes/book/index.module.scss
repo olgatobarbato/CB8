@@ -1,0 +1,27 @@
+.link {
+  color: #158ade;
+  font-size: 1.3rem;
+  transition: 0.3s;
+
+  &:hover {
+    color: tomato;
+  }
+}
+.Book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  line-height: 20px;
+  .image {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .title {
+    text-align: center;
+  }
+  .about {
+    padding: 15px;
+  }
+}
