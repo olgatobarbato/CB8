@@ -1,0 +1,23 @@
+.UserGuide {
+  width: calc(100% - 30px);
+  height: 100%;
+  padding: 15px;
+  color: rgb(255, 255, 255, 0.9);
+  line-height: 1.5;
+  background-color: rgba(0, 0, 0, 0.9);
+  background-size: cover;
+
+  ul {
+    list-style-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/30px-Pok%C3%A9_Ball_icon.svg.png");
+    padding-left: 40px;
+  }
+  a {
+    color: red;
+    text-decoration: underline;
+    transition: color 0.35s;
+
+    &:hover {
+      color: lime;
+    }
+  }
+}

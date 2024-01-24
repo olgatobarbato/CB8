@@ -1,0 +1,81 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+  color: rgb(255, 255, 255, 0.9);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  min-height: 100vh;
+
+  .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .inputPokemon,
+  .btnPokemon {
+    padding: 12px 24px;
+    box-sizing: content-box;
+    border: 0;
+    border-radius: 12px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+    outline: none;
+  }
+
+  .btnPokemon {
+    cursor: pointer;
+    transition: all 0.35s;
+
+    &:hover {
+      color: rgb(255, 255, 255, 0.9);
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+  }
+}
+
+.Pokedex {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+  padding-top: 20px;
+  width: 400px;
+  border-radius: 12px;
+  color: rgb(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
+
+  .image {
+    width: 80px;
+
+    &:hover {
+      transform: rotate(1, 0);
+    }
+  }
+
+  .type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    &::before {
+      content: "Type: ";
+      color: lightseagreen;
+      font-size: 1.4rem;
+    }
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
