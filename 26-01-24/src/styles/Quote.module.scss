@@ -1,0 +1,41 @@
+.Quote {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  .title {
+    font-size: 3rem;
+    text-align: center;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 2rem;
+    }
+  }
+  .text {
+    font-size: 2rem;
+    text-align: center;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 1.3rem;
+    }
+  }
+  .button {
+    border: none;
+    color: white;
+    background-color: fuchsia;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    transition: all 0.3s;
+    font-size: 1rem;
+
+    &:hover {
+      background-color: lime;
+      color: black;
+    }
+  }
+}

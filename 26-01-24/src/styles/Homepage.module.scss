@@ -1,0 +1,43 @@
+.Homepage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 200px;
+    height: 40px;
+    transition: all 0.3s;
+    font-size: 1rem;
+  }
+
+  .buttonAuguri {
+    background-color: fuchsia;
+    color: white;
+
+    transition: all 0.3s;
+    border-radius: 20px;
+
+    &:hover {
+      background-color: lime;
+      color: black;
+    }
+  }
+  .buttonQuote {
+    color: black;
+    background-color: yellow;
+    border-radius: 20px;
+
+    &:hover {
+      background-color: tomato;
+      color: white;
+    }
+  }
+}
