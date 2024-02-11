@@ -6,6 +6,7 @@
   background-image: $gradient;
   padding-bottom: 20px;
   padding-top: 20px;
+  height: 100vh;
 
   @include flex-box($dir: column, $align: center, $justify: center, $gap: 5px);
 
