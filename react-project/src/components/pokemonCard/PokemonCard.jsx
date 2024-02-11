@@ -26,7 +26,7 @@ const PokemonCard = ({ pokemonData, otherPokemonData }) => {
     }
   };
   if (!pokemonData || !otherPokemonData) {
-    return <div className={styles.PokemonCard}>Pokemon not found.</div>;
+    return <div className={styles.PokemonNotFound}>Pokemon not found.</div>;
   }
 
   return (
