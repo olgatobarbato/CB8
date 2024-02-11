@@ -4,7 +4,6 @@
 .PokemonCard {
   width: 100%;
   background-image: $gradient;
-  min-height: calc(100vh - 65px);
   padding-bottom: 20px;
   padding-top: 20px;
 
@@ -17,6 +16,8 @@
     @include flex-box();
   }
   @media only screen and (min-width: 768px) {
+      min-height: $calc;
+
     .cardExceptBtn {
       display: flex;
       flex-direction: row;
