@@ -1,0 +1,41 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.Homepage {
+  @include flex-box($dir: column, $align: center, $justify: center, $gap: 0);
+  width: 100%;
+  min-height: $calc;
+
+  .backgroundImg {
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+  }
+
+  .buttonContainer {
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+
+    .button {
+      border: 3px solid black;
+      border-radius: 20px;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+      background-image: $gradient;
+      transition: all 0.3s;
+      width: 300px;
+      text-align: center;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

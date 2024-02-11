@@ -1,0 +1,12 @@
+.MainLayout {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 20px;
+
+  main {
+    max-height: calc(100vh - 65px);
+    overflow-y: auto;
+  }
+}

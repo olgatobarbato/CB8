@@ -1,0 +1,44 @@
+@import "../styles/variables.scss";
+@import "../styles/mixins.scss";
+
+.MyPokemons {
+  padding-top: 20px;
+  background-image: $gradient;
+  width: 100vw;
+  min-height: $calc;
+
+  .pokemonList {
+    @include flex-box(
+      $dir: row,
+      $align: flex-start,
+      $justify: center,
+      $gap: 20px
+    );
+    flex-wrap: wrap;
+    padding: 20px 20px;
+
+    .CustomPokemonCard {
+      border: 2px solid black;
+      border-radius: 20px;
+      width: 140px;
+      height: 140px;
+
+      @include flex-box(
+        $dir: column,
+        $align: center,
+        $justify: center,
+        $gap: 10px
+      );
+
+      img {
+        width: 60px;
+      }
+      h2 {
+        font-size: smaller;
+      }
+    }
+    .title {
+      text-align: center;
+    }
+  }
+}

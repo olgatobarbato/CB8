@@ -1,0 +1,31 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.UserGuide {
+  min-height: $calc;
+  background-image: $gradient;
+  padding: 20px 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  ul {
+    list-style-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/30px-Pok%C3%A9_Ball_icon.svg.png");
+    padding-left: 40px;
+
+    li {
+      font-size: 12px;
+    }
+  }
+
+  a {
+    color: black;
+    text-decoration: underline;
+    transition: color 0.3s;
+
+    &:hover {
+      color: tomato;
+    }
+  }
+}

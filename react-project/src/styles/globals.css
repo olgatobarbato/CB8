@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 28px;
+}
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Stile Menu Hamburger */
+
+.bm-burger-button {
+  position: fixed;
+  width: 50px;
+  height: 40px;
+  right: 20px;
+  top: 5px;
+  transition: all 0.3s;
+}
+
+.bm-burger-button:hover {
+  transform: scale(1.2);
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: #bdc3c7;
+}
+
+.bm-menu {
+  background: #728a97;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  line-height: 100px;
+  transition: all 0.3s;
+}
+
+a:hover {
+  transform: scale(1.1);
+}

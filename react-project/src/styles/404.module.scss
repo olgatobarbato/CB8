@@ -1,0 +1,14 @@
+@import "../styles/variables.scss";
+@import "../styles/mixins.scss";
+
+.NotFoundPage {
+  background-image: $gradient;
+  min-height: $calc;
+
+  @include flex-box($dir: column, $gap: 30px);
+
+  .button {
+    @include button();
+    @include flex-box();
+  }
+}

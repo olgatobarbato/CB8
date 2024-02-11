@@ -1,0 +1,13 @@
+@import "../../styles/mixins.scss";
+
+.PokemonDetails {
+  width: 100%;
+
+  @include flex-box($dir: column, $align: center, $justify: center, $gap: 10px);
+
+  .abilities {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
