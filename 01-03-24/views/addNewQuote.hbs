@@ -1,0 +1,22 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/addNewQuote.css" />
+    <title>Aggiungi una nuova quote</title>
+  </head>
+  <body>
+    <h1>Aggiungi una nuova quote</h1>
+    <form class="form" action="/quotes" method="POST">
+      <div>
+        <label for="quote">Quote:</label>
+        <input type="text" id="quote" name="quote" required />
+      </div>
+      <div>
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" required />
+      </div>
+      <button type="submit">Aggiungi Quote</button>
+    </form>
+  </body>
+</html>
