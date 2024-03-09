@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Maglietta Uomo Basic",
+    "price": 20,
+    "category": "uomo",
+    "color": "Nero",
+    "size": ["S", "M", "L", "XL"]
+  },
+  {
+    "id": 2,
+    "name": "Maglietta Uomo Slim Fit",
+    "price": 25,
+    "category": "uomo",
+    "color": "Bianco",
+    "size": ["M", "L", "XL"]
+  },
+  {
+    "id": 3,
+    "name": "Maglietta Uomo Sportiva",
+    "price": 30,
+    "category": "uomo",
+    "color": "Grigio",
+    "size": ["S", "M", "L"]
+  },
+  {
+    "id": 4,
+    "name": "Maglietta Donna Basic",
+    "price": 18,
+    "category": "donna",
+    "color": "Blu",
+    "size": ["S", "M", "L"]
+  },
+  {
+    "id": 5,
+    "name": "Maglietta Donna Stampata",
+    "price": 22,
+    "category": "donna",
+    "color": "Rosa",
+    "size": ["S", "M"]
+  },
+  {
+    "id": 6,
+    "name": "Maglietta Donna Manica Lunga",
+    "price": 28,
+    "category": "donna",
+    "color": "Nero",
+    "size": ["S", "M", "L"]
+  },
+  {
+    "id": 7,
+    "name": "Maglietta Bambino a Righe",
+    "price": 15,
+    "category": "bambino",
+    "color": "Rosso",
+    "size": ["2 anni", "4 anni", "6 anni"]
+  },
+  {
+    "id": 8,
+    "name": "Maglietta Bambino con Stampa",
+    "price": 17,
+    "category": "bambino",
+    "color": "Verde",
+    "size": ["2 anni", "4 anni"]
+  },
+  {
+    "id": 9,
+    "name": "Maglietta Bambino Sportiva",
+    "price": 18,
+    "category": "bambino",
+    "color": "Blu",
+    "size": ["3 anni", "5 anni"]
+  }
+]
