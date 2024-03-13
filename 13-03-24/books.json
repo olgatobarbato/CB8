@@ -1,0 +1,20 @@
+[
+  { "id": 1, "title": "Il signore degli anelli", "author": "J.R.R. Tolkien" },
+  { "id": 2, "title": "1984", "author": "George Orwell" },
+  { "id": 3, "title": "Orgoglio e pregiudizio", "author": "Jane Austen" },
+  { "id": 4, "title": "Cronache di Narnia", "author": "C.S. Lewis" },
+  { "id": 5, "title": "Il nome del vento", "author": "Patrick Rothfuss" },
+  {
+    "id": 6,
+    "title": "Harry Potter e la pietra filosofale",
+    "author": "J.K. Rowling"
+  },
+  { "id": 7, "title": "Moby Dick", "author": "Herman Melville" },
+  {
+    "id": 8,
+    "title": "Il Piccolo Principe",
+    "author": "Antoine de Saint-Exupéry"
+  },
+  { "id": 9, "title": "Guerra e pace", "author": "Lev Tolstoj" },
+  { "id": 10, "title": "Don Chisciotte", "author": "Miguel de Cervantes" }
+]
